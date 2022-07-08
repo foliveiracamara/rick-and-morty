@@ -1,0 +1,68 @@
+@import '../../styles/sass/variables.scss';
+
+body {
+  background: $dark-purple;
+}
+
+.container {
+  background: $dark-purple;
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .portal {
+      animation: Breathing 6s linear infinite;
+      width: 500px;
+    }
+  }
+  .div__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .arrow {
+      color: $white;
+      font-size: 50px;
+      margin-left: 15px;
+      position: absolute;
+      margin-bottom: 25px;
+      animation: UpAndDown 2s linear infinite;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@keyframes Breathing {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes UpAndDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

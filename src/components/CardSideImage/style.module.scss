@@ -1,0 +1,61 @@
+@import '../../styles/sass/variables.scss';
+
+@font-face {
+  font-family: cartoon;
+  src: url(../../static/fonts/get-schwifty.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: digital;
+  src: url(../../static/fonts/Digital7-1e1Z.ttf);
+  font-weight: normal;
+}
+
+.container {
+  background: $dark-purple;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    width: 1000px;
+    max-height: 600px;
+    
+    .leftSide {
+      background-color: transparent;
+      border-radius: 10px;
+      padding: 20px;
+    
+      .title {
+        font-family: cartoon;
+        font-size: 24px;
+        color: $baby-blue;
+        margin-bottom: 20px;
+        text-shadow: 5px 3px 7px $green;
+      }
+
+      .text {
+        color: $white;
+        line-height: 27px;
+        font-size: 21px;
+        font-family: digital;
+        font-weight: 500;
+
+        p{
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .rightSide {
+      display: flex;
+      background: transparent;
+      backdrop-filter: blur(20px);
+
+      .img {
+        width: 400px;
+      }
+    }
+  }
+}

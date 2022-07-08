@@ -1,0 +1,36 @@
+@import "./styles/sass/variables.scss";
+
+@font-face {
+  font-family: cartoon;
+  src: url(../../static/fonts/get-schwifty.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: digital;
+  src: url(../../static/fonts/Digital7-1e1Z.ttf);
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.app{
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

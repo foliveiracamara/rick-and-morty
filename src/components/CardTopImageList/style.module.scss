@@ -1,0 +1,52 @@
+@import '../../styles/sass/variables.scss';
+
+.container {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: auto;
+  width: 80%;
+
+  .title{
+    height: 100px;
+    font-family: cartoon;
+    color: $baby-blue;
+    text-shadow: 5px 3px 7px $green;
+    font-size: 26px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 60px;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green;
+
+    .arrowBack {
+      font-size: 40px;
+    }
+
+    .currPage {
+      font-size: 30px;
+      font-family: digital;
+    }
+
+    .arrowNext {
+      font-size: 40px;
+    }
+  }
+}

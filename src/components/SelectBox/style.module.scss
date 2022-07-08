@@ -1,0 +1,10 @@
+@import '../../styles/sass/variables.scss';
+
+.select {
+  background: $white;
+  max-width: 230px;
+  min-width: 230px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}

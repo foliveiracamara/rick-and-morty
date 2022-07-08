@@ -1,0 +1,31 @@
+@import '../../../styles/sass/variables.scss';
+
+.container {
+  display: flex;
+  // margin-bottom: 20px;
+  flex-direction: column;
+  max-width: 230px;
+  min-width: 230px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px $green;
+
+  .top {
+    margin-bottom: -5px;
+
+    .image {
+      max-width: 100%;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+
+  .text {
+    padding: 5px;
+    color: $green;
+    font-family: digital;
+    background: $dark-purple;
+    height: 100%;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
