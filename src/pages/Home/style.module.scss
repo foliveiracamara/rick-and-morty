@@ -10,32 +10,23 @@ body {
   .header {
     display: flex;
     flex-direction: column;
+    border: red solid 2px;
   }
 
   .logo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
+    .name {
+      width: 900px;
+      margin-left: 100px;
+      animation: Growth 1s ease-in-out;
+    }
 
     .portal {
       animation: Breathing 6s linear infinite;
       width: 500px;
-    }
-  }
-  .div__arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    .arrow {
-      color: $white;
-      font-size: 50px;
-      margin-left: 15px;
-      position: absolute;
-      margin-bottom: 25px;
-      animation: UpAndDown 2s linear infinite;
     }
   }
 }
@@ -57,12 +48,13 @@ body {
   }
 }
 
-@keyframes UpAndDown {
-  0%,
-  100% {
-    transform: translateY(0);
+@keyframes Growth {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.5;
   }
-  50% {
-    transform: translateY(-10px);
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
