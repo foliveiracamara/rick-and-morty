@@ -1,29 +1,7 @@
 .container {
   display: flex;
-  background-color: transparent;
-  backdrop-filter: blur(30px);
-  width: 90%;
-  margin: 20px auto;
-  border-radius: 15px;
-  position: sticky;
+  border: red solid 2px;
 
-  .header {
-    display: flex;
-    align-items: center;
-    color: black;
-    height: 50px;
-    width: 100%;
-
-    .logo {
-      margin-left: 40px;
-    }
-
-    .header_list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100%;
-      list-style-type: none;
-    }
-  }
+  
 }
+

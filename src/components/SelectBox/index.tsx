@@ -1,11 +1,11 @@
 import style from './style.module.scss';
 
-interface selectBoxProps {
+interface ISelectBoxProps {
   setCharacter: (e: any) => void;
   handleCharacterChoice: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-const SelectBox = ({ handleCharacterChoice }: selectBoxProps) => {
+const SelectBox = ({ handleCharacterChoice }: ISelectBoxProps) => {
   return (
     <select className={style.select} onChange={handleCharacterChoice}>
       <option value="all" selected>

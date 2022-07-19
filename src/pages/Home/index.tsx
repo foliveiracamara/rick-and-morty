@@ -1,6 +1,6 @@
-import Header from '../../components/Header';
 import CardSideImage from '../../components/CardSideImage';
 import CardTopImageList from '../../components/CardTopImageList';
+import Header from '../../components/Header';
 
 import Portal from '../../images/portal.svg';
 import Name from '../../images/logo-green-blue.svg';
@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <>
       <div className={style.container}>
+        <Header />
         <div className={style.logo}>
           <img className={style.name} src={Name} />
           <img className={style.portal} src={Portal} />
