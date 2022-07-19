@@ -14,7 +14,7 @@ export default function App() {
   const themeSchemaColor = themeSchema[theme[0]]
   const teste = theme[0]
 
-  console.log('teste', teste)
+  console.log('teste',teste)
   console.log(theme)
   useEffect(() => {
 
