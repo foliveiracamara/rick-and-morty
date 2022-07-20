@@ -1,0 +1,46 @@
+@import '../../styles/sass/variables.scss';
+
+.container {
+  position: relative;
+  
+  .field {
+    position: absolute;
+    left: -999999px;
+    top: -999999px;
+
+    &:checked + span {
+      background-color: $baby-blue;
+
+      &:before {
+        left: 27px;
+      }
+    }
+
+    &:focus + span {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1)
+    }
+  }
+
+  .slider {
+    display: flex;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    border-radius: 100px;
+    background-color: $grey;
+    position: relative;
+    transition: background-color 0.2s;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 21px;
+      height: 21px;
+      border-radius: 21px;
+      transition: 0.2s;
+      background: $white;
+    }
+  }
+}

@@ -1,16 +1,10 @@
 @import '../../styles/sass/variables.scss';
 
-body {
-  background: $dark-purple;
-}
-
 .container {
-  background: $dark-purple;
-  
   .header {
     display: flex;
-    flex-direction: column;
-    border: red solid 2px;
+    justify-content:end;
+    padding: 10px 10px 0 0;
   }
 
   .logo {
@@ -25,7 +19,7 @@ body {
     }
 
     .portal {
-      animation: Breathing 6s linear infinite;
+      animation: Breathing 8s linear infinite;
       width: 500px;
     }
   }
@@ -44,7 +38,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.6);
   }
 }
 

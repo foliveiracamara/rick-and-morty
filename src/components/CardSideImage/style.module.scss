@@ -13,7 +13,6 @@
 }
 
 .container {
-  background: $dark-purple;
 
   .content {
     display: flex;
@@ -35,7 +34,7 @@
       }
 
       .text {
-        color: $white;
+        color: $grey;
         line-height: 27px;
         font-size: 21px;
         font-family: digital;
