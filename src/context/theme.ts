@@ -3,8 +3,7 @@ const theme = {
     backGround: "#0b0620"
   },
   light: {
-    backGround: "#9c8ae3",
-    color: "#0b0620"
+    backGround: "#b0a4ed"
   }
 }
 
