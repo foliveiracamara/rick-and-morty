@@ -1,9 +1,11 @@
 const theme = {
   dark: {
-    backGround: "#0b0620"
+    backGround: "#0b0620",
+    color: "#ffff"
   },
   light: {
-    backGround: "#b0a4ed"
+    backGround: "#b0a4ed",
+    color: "#0b0620"
   }
 }
 

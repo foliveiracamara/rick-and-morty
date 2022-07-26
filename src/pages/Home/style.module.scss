@@ -1,9 +1,11 @@
 @import '../../styles/sass/variables.scss';
 
 .container {
+  height: 100vh;
+
   .header {
     display: flex;
-    justify-content:end;
+    justify-content: end;
     padding: 10px 10px 0 0;
   }
 
@@ -13,14 +15,14 @@
     align-items: center;
 
     .name {
-      width: 900px;
+      width: 1000px;
       margin-left: 100px;
       animation: Growth 1s ease-in-out;
     }
 
     .portal {
-      animation: Breathing 8s linear infinite;
-      width: 500px;
+      animation: Breathing 5s linear infinite;
+      width: 400px;
     }
   }
 }
@@ -38,7 +40,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.6);
+    transform: scale(1.4);
   }
 }
 

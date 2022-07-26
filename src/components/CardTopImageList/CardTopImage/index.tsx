@@ -2,7 +2,6 @@ import style from './style.module.scss';
 
 export type ApiDataProps = {
   image?: string;
-  id?: number;
   name?: string;
   status?: string;
   species?: string;
@@ -30,7 +29,7 @@ const CardTopImage = ({
           <h1 className={style.name}>{name}</h1>
           <h1 className={style.status}>{status}</h1>
           <h1 className={style.species}>{species}</h1>
-          <h1 className={style.type}>{type}</h1>
+          <h1 className={style.type}>{type ? type : 'UNKNOWN'}</h1>
           <h1 className={style.gender}>{gender}</h1>
           <h1 className={style.origin}>{origin}</h1>
         </div>

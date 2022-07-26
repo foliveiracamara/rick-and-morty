@@ -1,8 +1,10 @@
 import { createContext, useContext, useEffect, useState } from 'react';
+
 import theme from './theme'
 
 interface IChoosenTheme {
   choosenTheme: string | object;
+  textColor: string | object;
 }
 
 interface IThemeContextProvider {
@@ -13,9 +15,12 @@ export const ThemeContext = createContext<any>({});
 
 export const ThemeContextProvider = ({ children }: IThemeContextProvider) => {
   const [choosenTheme, setChoosenTheme] = useState<IChoosenTheme>();
+  const [textColor, setTextColor] = useState<IChoosenTheme>();
 
   useEffect(() => {
-    return setChoosenTheme(theme.dark.backGround);
+    setChoosenTheme(theme.dark.backGround)
+    setTextColor(theme.dark.color);
+    
   }, [])
 
   return (
@@ -23,6 +28,8 @@ export const ThemeContextProvider = ({ children }: IThemeContextProvider) => {
       value={{
         choosenTheme,
         setChoosenTheme,
+        textColor,
+        setTextColor
       }}
     >
       {children}

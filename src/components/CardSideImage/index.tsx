@@ -1,20 +1,23 @@
 import style from './style.module.scss';
 
 import RickMortyPortal from '../../images/rick-and-morty-portal.svg';
+import { useTheme } from '../../context/themeContext';
 
 type CardProps = {
   title: string;
 };
 
 export default function CardSideImage(props: CardProps) {
+  const { textColor } = useTheme()
+  
   return (
     <div className={style.container}>
       <div className={style.content}>
-        <div className={style.leftSide}>
+        <div className={style.leftSide} >
           <div className={style.title}>
             <h1>0 que é Rick and Morty?</h1>
           </div>
-          <div className={style.text}>
+          <div className={style.text} style={{color: `${textColor}`}}>
             <p>
               Criada por Justin Roiland e Dan Harmon, Rick & Morty é uma série
               animada de comédia que mostra as aventuras interdimensionais de
