@@ -6,7 +6,7 @@
   max-width: 230px;
   min-width: 230px;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px $green;
+  box-shadow: 0 0 10px $baby-blue;
 
   .top {
     margin-bottom: -5px;
@@ -19,12 +19,17 @@
 
   .text {
     padding: 5px;
-    color: $green;
-    font-family: digital;
+    color: $white;
+    font-family: 'Poppins';
     background: $dark-purple;
-    height: 170px;
-    font-size: 14px;
+    height: 210px;
+    font-weight: 300;
+    font-size: 12px;
     line-height: 25px;
     border-radius: 0px 0px 10px 10px;
+
+    .text__item {
+      color: $green;
+    }
   }
 }

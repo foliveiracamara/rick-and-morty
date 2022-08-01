@@ -1,21 +1,29 @@
 import { useState, useEffect } from 'react';
 
+import filters from './filters.json';
+
 import CardTopImage, { ApiDataProps } from './CardTopImage';
-import SelectBox from '../SelectBox';
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import style from './style.module.scss';
+import SelectBox from '../SelectBox';
 
 const CardTopImageList = () => {
   const [apiResults, setApiResults] = useState<ApiDataProps[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>();
   const [character, setCharacter] = useState<string>('all');
+  const [status, setStatus] = useState<string>();
 
   const handleCharacterChoice = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setCharacter(e.target.value);
+    console.log(character);
+  };
+
+  const handleCharacterStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setStatus(e.target.value);
   };
 
   const getCharacterData = async () => {
@@ -53,7 +61,7 @@ const CardTopImageList = () => {
 
   useEffect(() => {
     getCharacterData();
-  }, [character, currentPage, apiResults]);
+  }, [currentPage, character]);
 
   return (
     <div className={style.container}>
@@ -67,21 +75,18 @@ const CardTopImageList = () => {
         />
       </div>
       <div className={style.content}>
-        {apiResults?.map(
-          ({ image, id, name, species, status, type, gender }) => {
-            return (
-              <CardTopImage
-                image={image}
-                id={id}
-                name={name}
-                species={species}
-                status={status}
-                type={type}
-                gender={gender}
-              />
-            );
-          }
-        )}
+        {apiResults?.map(({ image, name, species, status, type, gender }) => {
+          return (
+            <CardTopImage
+              image={image}
+              name={name}
+              species={species}
+              status={status}
+              type={type}
+              gender={gender}
+            />
+          );
+        })}
       </div>
       <div className={style.pagination}>
         <ArrowBackIosIcon

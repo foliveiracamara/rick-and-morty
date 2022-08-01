@@ -6,26 +6,19 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: digital;
-  src: url(../../static/fonts/Digital7-1e1Z.ttf);
-  font-weight: normal;
-}
-
 .container {
-
   .content {
     display: flex;
     flex-direction: row;
     border-radius: 15px;
     width: 1000px;
     max-height: 600px;
-    
+
     .leftSide {
       background-color: transparent;
       border-radius: 10px;
       padding: 20px;
-    
+
       .title {
         font-family: cartoon;
         font-size: 24px;
@@ -35,11 +28,11 @@
 
       .text {
         line-height: 27px;
-        font-size: 21px;
-        font-family: digital;
-        font-weight: 500;
+        font-size: 19px;
+        font-family: 'Poppins';
+        font-weight: 300;
 
-        p{
+        p {
           margin-bottom: 10px;
         }
       }
@@ -48,9 +41,16 @@
     .rightSide {
       display: flex;
       background: transparent;
+      height: 400px;
+      margin-top: 100px;
 
-      .img {
-        width: 400px;
+      .rick {
+        height: 450px;
+      }
+
+      .morty {
+        height: 300px;
+        margin-top: 150px;
       }
     }
   }

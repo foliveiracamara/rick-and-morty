@@ -24,7 +24,7 @@ body {
 }
 
 .app{
-  animation: fade 2s;
+  /* animation: fade 2s; */
 }
 
 @keyframes fade {

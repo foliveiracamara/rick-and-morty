@@ -1,5 +1,13 @@
 {
-  "characters": {
-      
+  "options": {
+    "characters": [
+      { "value": "all", "label": "Todos Personagens" },
+      { "value": "rick", "label": "Ricks" },
+      { "value": "morty", "label": "Mortys" },
+      { "value": "beth", "label": "Beths" },
+      { "value": "summer", "label": "Summers" },
+      { "value": "jerry", "label": "Jerrys" }
+    ],
+    "status": ["alive", "dead", "unknown"]
   }
 }

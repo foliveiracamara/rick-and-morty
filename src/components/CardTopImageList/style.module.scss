@@ -8,6 +8,7 @@
   padding: 10px;
   overflow: auto;
   width: 80%;
+  margin-top: 200px;
 
   .title{
     height: 100px;
@@ -34,6 +35,8 @@
     justify-content: center;
     align-items: center;
     color: $green;
+    font-family: 'Poppins';
+    margin-top: 50px;
 
     .arrowBack {
       font-size: 40px;
@@ -41,7 +44,6 @@
 
     .currPage {
       font-size: 30px;
-      font-family: digital;
     }
 
     .arrowNext {
